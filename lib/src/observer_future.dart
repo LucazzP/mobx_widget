@@ -9,7 +9,7 @@ class ObserverFuture<D, E> extends StatefulWidget {
   /// If [fetchData] is filled, it will be called just once on initState.
   final VoidCallback fetchData;
 
-  final ObservableFuture Function() observableFuture;
+  final ObservableFuture<D> Function() observableFuture;
   final Widget Function(BuildContext context, E error) onError;
   final Widget Function(BuildContext context) onPending;
   final Widget Function(BuildContext context) onUnstarted;

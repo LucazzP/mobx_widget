@@ -12,10 +12,7 @@ class LoaderWidget extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       color: this.backgroundColor ?? Colors.black26,
-      child: CircularProgressIndicator(
-        valueColor: AlwaysStoppedAnimation<Color>(
-            color ?? Theme.of(context).primaryColor),
-      ),
+      child: CircularProgressIndicator(),
     );
   }
 }
